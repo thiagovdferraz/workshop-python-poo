@@ -1,12 +1,13 @@
 import pandas as pd
 
 class ProcessadorCSV:
-    def __init__(self, arquivo_csv):
+    def __init__(self, arquivo_csv: str):
+        # toda classe precisa do metodo construtor __init__
         self.arquivo_csv = arquivo_csv
         self.df = None
     
     def carregar_csv(self):
-        # Carregar o arquivo CSV em um DataFramepo
+        # Carregar o arquivo CSV em um DataFrame
         self.df = pd.read_csv(self.arquivo_csv)
     
     def remover_celulas_vazias(self):
