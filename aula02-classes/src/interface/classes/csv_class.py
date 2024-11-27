@@ -10,7 +10,8 @@ class CsvProcessor:
         self.df = pd.read_csv(self.file_path)
         return self.df  # Return the DataFrame after loading
 
-    ## receber um str str[]
+    ## receber um vetor de strings str[]
+    ## recursividade
     def filtrar_por(self, colunas, atributos):
         if len(colunas) != len(atributos):
             raise ValueError("Não tem o mesmo número de colunas e atributos")
