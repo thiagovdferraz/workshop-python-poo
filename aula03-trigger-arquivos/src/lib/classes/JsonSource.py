@@ -5,7 +5,7 @@ from lib.classes.FilesSources import FilesSources
 class JsonSource(FilesSources):
     def create_path(self):
         current_directory = os.getcwd()
-        self.folder_path = os.path.join(current_directory, 'json_files')
+        self.folder_path = os.path.join(current_directory, 'data', 'json_files')
         if not os.path.exists(self.folder_path):
             os.makedirs(self.folder_path)
 
