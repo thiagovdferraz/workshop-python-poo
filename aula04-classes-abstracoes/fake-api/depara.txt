@@ -1,0 +1,7 @@
+
+associando api com SQL
+
+get = select
+post = insert
+put = update
+delete = delete
