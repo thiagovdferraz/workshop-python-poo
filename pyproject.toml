@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.12"
 pandas = "^2.2.3"
 schedule = "^1.2.2"
+fastapi = "^0.115.6"
+faker = "^33.1.0"
 
 
 [build-system]
